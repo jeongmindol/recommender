@@ -29,7 +29,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11.x'
-          
+
       # Create and activate Python virtual environment
       - name: Set up Python virtual environment
         run: |
@@ -42,4 +42,4 @@ jobs:
           source venv/bin/activate
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      # - run: pm2 restart BackendAPI
+      - run: pm2 restart BackendAPI
