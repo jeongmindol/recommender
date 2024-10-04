@@ -5,7 +5,6 @@ const spawn = require('child_process').spawn;
 
 const app = express();
 const PORT = 8080;
-// test 1
 
 app.use(cors());
 app.use(express.json());
